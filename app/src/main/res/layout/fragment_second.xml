@@ -43,7 +43,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
-        android:text="Here is a second number between 0 and "
+        android:text="Here is a random number between 0 and "
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
         android:typeface="normal"
