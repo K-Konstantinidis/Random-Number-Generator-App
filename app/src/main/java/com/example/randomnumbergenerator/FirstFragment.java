@@ -30,30 +30,21 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.randomButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int currentCount = Integer.parseInt(binding.result.getText().toString());
-                FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount);
-                NavHostFragment.findNavController(FirstFragment.this).navigate(action);
-            }
+        binding.randomButton.setOnClickListener(view1 -> {
+            int currentCount = Integer.parseInt(binding.result.getText().toString());
+            FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount);
+            NavHostFragment.findNavController(FirstFragment.this).navigate(action);
         });
 
-        binding.toastButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast toast = Toast.makeText(getActivity(), "Welcome to the random App!", Toast.LENGTH_LONG);
-                toast.show();
-            }
+        binding.toastButton.setOnClickListener(view12 -> {
+            Toast toast = Toast.makeText(getActivity(), "Welcome to the random App!", Toast.LENGTH_LONG);
+            toast.show();
         });
 
-        binding.countButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               int count = Integer.parseInt(binding.result.getText().toString());
-               count++;
-               binding.result.setText(Integer.toString(count));
-            }
+        binding.countButton.setOnClickListener(view13 -> {
+           int count = Integer.parseInt(binding.result.getText().toString());
+           count++;
+           binding.result.setText(Integer.toString(count));
         });
     }
 
@@ -62,5 +53,4 @@ public class FirstFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

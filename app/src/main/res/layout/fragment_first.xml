@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
         android:fontFamily="monospace"
-        android:text="0"
+        android:text="@string/counter"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"

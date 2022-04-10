@@ -30,6 +30,7 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/nothing"
         app:srcCompat="@android:drawable/ic_dialog_email"
         tools:ignore="SpeakableTextPresentCheck" />
 
